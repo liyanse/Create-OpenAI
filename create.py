@@ -47,7 +47,7 @@ for image in images:
     webbrowser.open(image)
 
 ## generate images (byte output)
-response = generate_image('The National Emblem of Saudi Arabia Crest', num_image=20, size=SIZES[1], output_format='b64_json')
+response = generate_image('Saudi Arabia Crest', num_image=2, size=SIZES[1], output_format='b64_json')
 prefix = 'demo'
 for indx, image in enumerate(response['images']):
     with open(f'{prefix}_{indx}.jpg', 'wb') as f:
